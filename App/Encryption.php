@@ -21,7 +21,7 @@ class Encryption{
             return;
         }
         foreach($excludes as $key => $file){
-            $excludes[ $key ] = $src.'/'.$file;
+            $excludes[ $key ] = $src.'/'.$file; 
         }
         $rec = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator( $src ));
         $require_funcs = array('include_once', 'include', 'require', 'require_once'); 
