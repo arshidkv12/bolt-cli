@@ -5,7 +5,8 @@
     "require": {
         "php" : ">=7.0"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "license": "MIT", 
     "autoload": {
         "psr-4": {
