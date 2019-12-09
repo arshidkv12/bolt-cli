@@ -2,7 +2,9 @@
     "name": "phpbolt/encrypt",
     "description": "phpBolt Encryprion",
     "bin": ["bin/main"],
-    "require": {},
+    "require": {
+        "php" : ">=7.0"
+    },
     "autoload": {
         "psr-4": {
             "Bolt\\": "app/"
