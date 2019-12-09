@@ -15,6 +15,9 @@ class Encryption{
 
         if (!extension_loaded('bolt')) {
             $this->printer->display( 'Please install bolt.so https://phpBolt.com' );
+            $this->printer->display( 'PHP Version '. phpversion() );
+            $this->printer->display( 'INI file location '.php_ini_scanned_files() );
+            $this->printer->display( 'Extension dir: '.ini_get('extension_dir') );
             return;
         }
         foreach($excludes as $key => $file){
