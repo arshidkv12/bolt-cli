@@ -1,0 +1,11 @@
+{
+    "name": "phpbolt/encrypt",
+    "description": "phpBolt Encryprion",
+    "bin": ["bin/main"],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bolt\\": "app/"
+        }
+    }
+}
