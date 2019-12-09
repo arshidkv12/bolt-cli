@@ -1,9 +1,14 @@
+#!/usr/bin/env php
 <?php
 
 use Bolt\App;
 use Bolt\Encryption;
 
-require_once '../vendor/autoload.php';
+if (file_exists(__DIR__.'/../vendor/autoload.php')) {
+    require __DIR__.'/../vendor/autoload.php';
+} else {
+    require __DIR__.'/vendor/autoload.php';
+}
 
 if (php_sapi_name() !== 'cli') {
     exit;
