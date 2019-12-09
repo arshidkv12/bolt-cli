@@ -12,7 +12,7 @@ First, download the encryption tool using Composer:
 Make sure to place composer's system-wide vendor bin directory in your $PATH so the bolt encryption tool executable can be located by your system. This directory exists in different locations based on your operating system; however, some common locations include:
 
 #### macOS and GNU / Linux Distributions: $HOME/.composer/vendor/bin ####
-`export PATH=$HOME/.composer/vendor/bin`
+`export PATH=$PATH:$HOME/.composer/vendor/bin`
 
 #### Windows: %USERPROFILE%\AppData\Roaming\Composer\vendor\bin ####
 
