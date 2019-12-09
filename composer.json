@@ -1,7 +1,7 @@
 {
     "name": "phpbolt/encrypt",
     "description": "phpBolt Encryprion",
-    "bin": ["bin/main"],
+    "bin": ["bin/bolt"],
     "require": {
         "php" : ">=7.0"
     },
