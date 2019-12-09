@@ -39,8 +39,13 @@ class Encryption{
             $cipher   = \bolt_encrypt( "?>".$contents, $php_blot_key );
             $preppand = '<?php bolt_decrypt( __FILE__ , PHP_BOLT_KEY); return 0;
             ##!!!##';
+            $re = '/\<\?php/m';
+            preg_match($re, $contents, $matches ); 
+            
+            if( !empty($matches[0]) ) $contents = preg_replace( $re, '', $contents );
+            
             $newFile  = str_replace($src, $output, $filePath );
-            $fp = fopen( $newFile, 'w');
+            $fp       = fopen( $newFile, 'w');
             fwrite($fp, $preppand.$cipher);
             fclose($fp);
             unset( $cipher );
