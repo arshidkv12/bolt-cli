@@ -3,7 +3,8 @@
     "description": "phpBolt Encryprion",
     "bin": ["bin/bolt"],
     "require": {
-        "php" : ">=7.0"
+        "php" : ">=7.0",
+        "illuminate/console": "^8.83"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
